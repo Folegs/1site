@@ -1,0 +1,71 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  background: #f6f2f2; 
+  padding-bottom: 70px;}
+  header .menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; }
+    header .menu nav {
+      background: #313030;
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      header .menu nav .mobile-btn {
+        width: 50px;
+        height: 50px;
+        background: red;
+        display: none; }
+      header .menu nav .active ~ a {
+        display: block; }
+      header .menu nav a {
+        padding: 20px 10px;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        user-select: none; }
+        header .menu nav a:hover {
+          background: #ff3f40; }
+    header .menu .block_left {
+      width: 50%;
+      margin-right: 100px;}
+    header .menu .block_right {
+      width: 50%;
+      background: grey; 
+      margin-top: 50px;
+      box-shadow: 0 0 50px #696969;}
+      header .menu .block_right .player_icon{
+        display: block;
+        margin: 0px auto;
+      }
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+button {
+  background: red;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  header .menu nav {
+    flex-direction: column;
+    text-align: center; }
+    header .menu nav .mobile-btn {
+      display: block; }
+    header .menu nav a {
+      display: none; } }
